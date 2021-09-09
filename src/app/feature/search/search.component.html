@@ -1,0 +1,15 @@
+<div class="container-fluid p-4">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            result
+        </div>
+        <div class="col-12 col-md-9">
+            <app-search-card *ngFor="let item of results$" 
+                              [poster_path]="item.poster_path" 
+                              [title]="item.title || item.name" 
+                              [release_date]="item.release_date"
+                              [overview]="item.overview">
+            </app-search-card>
+        </div>
+    </div>
+</div>

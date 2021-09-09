@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row bg-secondary">
+    <div class="col-12">
+        <p>nav</p>
+    </div>
+  </div>
+  <div class="row p-3" *ngIf="movieDetails" 
+       style="background-image:linear-gradient(to bottom right, rgba(5.88%, 3.92%, 3.53%, 1.00), rgba(5.88%, 3.92%, 3.53%, 0.84)), 
+       url('https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/{{movieDetails.backdrop_path}}');
+       border-bottom: 1px solid black;
+       background-position: right -200px top;
+       background-position-x: right -200px;
+       background-position-y: top;
+       background-size: cover;
+       background-repeat: no-repeat;">
+      <div class="col-12">
+        <app-card-detail 
+                          [backdrop_path]="movieDetails.backdrop_path"
+                          [title]="movieDetails.title"
+                          [poster_path]="movieDetails.poster_path">
+        x</app-card-detail>
+      </div>
+  </div>
+</div>
+<pre>
+    {{ movieDetails | json}}
+</pre>

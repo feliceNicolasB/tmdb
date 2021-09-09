@@ -1,0 +1,21 @@
+<div class="jumbotron" style="background-image:linear-gradient(to right, rgba(3,37,65, 0.8) 0%, rgba(3,37,65, 0) 100%),
+url('https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/{{randomImage}}'); 
+background-size:cover;">
+  <div class="container-fluid">
+    <h2 class="title">Benvenuto.</h2><h3 class="subtitle">Milioni di film, serie TV e persone da scoprire. Esplora ora.
+    </h3>
+    <form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Cerca un film, serie tv, personaggio......"
+          name="search"
+          id="search"
+          ngModel
+        />
+        <button type="submit" routerLink="/home/{{query}}" >Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-12 col-md-2">
+            <h2 class="title">Visione Gratuita</h2>
+        </div>
+        <div class="col-12 col-md-10 d-flex">
+            <ul class="nav nav-custom">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" active>Oggi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Questa Settimana</a>
+                </li>
+              </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex flex-nowrap overflow-auto">
+          <app-card *ngFor="let item of todayTrendings" 
+                    [id]="item.id"
+                    [poster_path]="item.poster_path"
+                    [vote_average]="item.vote_average"
+                    [title]="item.title || item.name"
+                    [release_date]="item.release_date || item.first_air_date">
+          </app-card>
+        </div>
+    </div>
+</div>
+

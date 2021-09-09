@@ -1,0 +1,47 @@
+.jumbotron {
+  border-radius: 0px;
+  .container-fluid {
+    color: #FFFFFF;
+    .title{
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 0.7em;
+    }
+    .subtitle {
+      font-size: 2em;
+      font-weight:600;
+    }
+    .search-container {
+      margin-top: 50px;
+      input {
+        display: flex;
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+        border: 1px solid #FFFFFF;
+        position: relative;
+        font-weight: 500;
+        outline: none;
+      }
+      button {
+        position: relative;
+        float: right;
+        bottom: 46px;
+        border-radius: 25px;
+        border: 1px solid rgb(1,180,228);
+        padding: 10px;
+        width: 100px;
+        height: 46px;
+        background: linear-gradient(to right, rgba(30,213,169, 1) 0%, rgba(1,180,228, 1) 100%);
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 1em;
+        &:hover{
+          color:black;
+        }
+      }
+      
+    }
+    
+  }
+}

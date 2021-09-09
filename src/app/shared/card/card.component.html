@@ -1,0 +1,15 @@
+<div class="card-custom">
+    <img src="https://image.tmdb.org/t/p/w220_and_h330_face/{{ poster_path}}" class="img-fluid border-radius shadow" alt="{{title}}">
+    <a href="#">
+        <i style="border-radius: 50%; position: relative; top:-220px; right:-120px; padding: 5px; background-color: rgba(255, 255, 255, 0.611); color: rgb(3,37,65);" class="fas fa-ellipsis-h fa-sm"></i>
+    </a>
+    <div class="circle">
+        <p class="vote">{{ (vote_average | number )}}</p>
+    </div>
+    <div class="body-custom">
+      <h2 class="title">
+        <a class="text-custom" routerLink="/{{movie_id}}">{{title}}</a>
+      </h2>
+      <p class="release">{{release_date | date }}</p>
+    </div>
+</div>

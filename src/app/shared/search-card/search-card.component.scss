@@ -1,0 +1,24 @@
+.card-custom {
+    border: 1px solid rgba(128, 128, 128, 0.371);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    .border-custom{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .title {
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-top: 20px;
+      line-height: 0em;
+    }
+    .release {
+        color: #999;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .overview {
+        padding-right: 20px;
+        line-height: 1em;
+    }
+}
